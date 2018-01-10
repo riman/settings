@@ -35,7 +35,7 @@ export HISTCONTROL=erasedups
 export HISTTIMEFORMAT="[%F %T] "
 
 # Bash history: writing history with every keystroke
-PROMPT_COMMAND="history -a;$P
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
 export PATH
 
