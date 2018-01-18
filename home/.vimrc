@@ -12,7 +12,7 @@ set autoindent
 set wildmenu
 set background=dark
 set number
-set paste
+set pastetoggle=<F3>
 
 " netrw settings
 filetype plugin on
