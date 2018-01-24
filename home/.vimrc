@@ -13,7 +13,15 @@ set wildmenu
 set background=dark
 set number
 set pastetoggle=<F3>
-set fileencodings=utf-8,cp1251,cp866
+if has("multi_byte")
+  set encoding=utf-8
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  setglobal fileencoding=utf-8
+  "setglobal bomb
+  set fileencodings=ucs-bom,utf-8,cp1251,cp866,latin1
+endif
 
 " netrw settings
 filetype plugin on
@@ -30,9 +38,9 @@ set smartcase
 
 colorscheme desert
 " alt+right to move to next tab
-map <Esc>[1;3D :tabn <CR>
+map <Esc>[1;3C :tabn <CR>
 " alt+left to move to previous tab
-map <Esc>[1;3C :tabp <CR> 
+map <Esc>[1;3D :tabp <CR> 
 
 " this settings must go after the 'set nocp' setting or else it wouldn't work 
 set history=10000
