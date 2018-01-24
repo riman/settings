@@ -13,6 +13,7 @@ set wildmenu
 set background=dark
 set number
 set pastetoggle=<F3>
+set fileencodings=utf-8,cp1251,cp866
 
 " netrw settings
 filetype plugin on
@@ -28,8 +29,8 @@ set ignorecase
 set smartcase
 
 colorscheme desert
-map <F2> :tabn <CR>
-map <F1> :tabp <CR> 
+map <Esc>[1;3D :tabn <CR>
+map <Esc>[1;3C :tabp <CR> 
 
 " this settings must go after the 'set nocp' setting or else it wouldn't work 
 set history=10000
