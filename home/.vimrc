@@ -13,6 +13,7 @@ set wildmenu
 set background=dark
 set number
 set pastetoggle=<F3>
+set nowrap
 if has("multi_byte")
   set encoding=utf-8
   if &termencoding == ""
