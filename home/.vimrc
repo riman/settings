@@ -38,10 +38,10 @@ set ignorecase
 set smartcase
 
 colorscheme desert
-" alt+right to switch to next tab
-map <Esc>[1;3C :tabn <CR>
-" alt+left to switch to previous tab
-map <Esc>[1;3D :tabp <CR> 
+" alt+pgdn to switch to next tab
+map <Esc>[6;3~ :tabn <CR>
+" alt+pgup to switch to previous tab
+map <Esc>[5;3~ :tabp <CR> 
 " alt+# to switch to tab number #
 map <Esc>1 :tabn 1 <CR>
 map <Esc>2 :tabn 2 <CR>
