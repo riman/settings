@@ -38,10 +38,21 @@ set ignorecase
 set smartcase
 
 colorscheme desert
-" alt+right to move to next tab
+" alt+right to switch to next tab
 map <Esc>[1;3C :tabn <CR>
-" alt+left to move to previous tab
+" alt+left to switch to previous tab
 map <Esc>[1;3D :tabp <CR> 
+" alt+# to switch to tab number #
+map <Esc>1 :tabn 1 <CR>
+map <Esc>2 :tabn 2 <CR>
+map <Esc>3 :tabn 3 <CR>
+map <Esc>4 :tabn 4 <CR>
+map <Esc>5 :tabn 5 <CR>
+map <Esc>6 :tabn 6 <CR>
+map <Esc>7 :tabn 7 <CR>
+map <Esc>8 :tabn 8 <CR>
+map <Esc>9 :tabn 9 <CR>
+map <Esc>0 :tabn 10 <CR>
 
 " this settings must go after the 'set nocp' setting or else it wouldn't work 
 set history=10000
