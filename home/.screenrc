@@ -1,19 +1,19 @@
 term xterm
 defshell -bash
 defscrollback 5000
+
+# Ctrl+# (1-9) to switch to a numbered window
 bindkey "\033[5;5~" prev
 bindkey "\033[6;5~" next
-bindkey "\033\060" select 1
-bindkey "\033\061" select 1
-bindkey "\033\062" select 2
-bindkey "\033\063" select 3
-bindkey "\033\064" select 4
-bindkey "\033\065" select 5
-bindkey "\033\066" select 6
-bindkey "\033\067" select 7
-bindkey "\033\070" select 8
-bindkey "\033\071" select 9
-bindkey "\0330" select 10
+bindkey "\033[1;5q" select 1
+bindkey "\000" select 2
+bindkey "\033[1;5s" select 3
+bindkey "\033[1;5t" select 4
+bindkey "\033[1;5u" select 5
+bindkey "\036" select 6
+bindkey "\033[1;5w" select 7
+bindkey "\033[1;5x" select 8
+bindkey "\033[1;5y" select 9
 # ctrl+shift+T for en_US and ru_RU locales
 bindkey "\302\224" screen 1
 bindkey "\033\024" screen 1
