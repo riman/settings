@@ -7,6 +7,7 @@ BASH_DIR="${HOME}/.bash"
 BASHRC_GLOBAL_FILE="/etc/bashrc"
 BASH_LOCAL_FILE="${BASH_DIR}/.bash_local"
 BASH_ALIASES="${BASH_DIR}/.bash_aliases"
+BASH_FUNCTIONS="${BASH_DIR}/.bash_functions"
 
 
 if [ -f $BASH_LOCAL_FILE ] 
@@ -15,6 +16,7 @@ then
 fi
 
 source $BASH_ALIASES
+source $BASH_FUNCTIONS
 
 if [ $(id -u) -eq 0 ];
 then
