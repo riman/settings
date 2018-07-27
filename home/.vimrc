@@ -64,7 +64,9 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 set wildignore+=*.swp,*.d,*.o
-let g:ctrlp_user_command = 'find %s -type f'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+let g:ctrlp_working_path_mode = 'ra' " set working directory relative to .git
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " these settings are for vim-fugitive
 set runtimepath^=~/.vim/bundle/vim-fugitive
