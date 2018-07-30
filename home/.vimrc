@@ -74,4 +74,4 @@ set runtimepath^=~/.vim/bundle/vim-fugitive
 " syntax
 autocmd BufNewFile,BufRead *.bat.cmd   set syntax=winbatch
 syntax on
-
+execute pathogen#infect()
