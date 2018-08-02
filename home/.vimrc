@@ -71,6 +71,9 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 " these settings are for vim-fugitive
 set runtimepath^=~/.vim/bundle/vim-fugitive
 
+" these settings are for vim-airline
+let g:airline#extensions#tabline#enabled = 1
+
 " syntax
 autocmd BufNewFile,BufRead *.bat.cmd   set syntax=winbatch
 syntax on
