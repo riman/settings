@@ -7,6 +7,8 @@ copyResources (){
     cp -v .screenrc ${HOME}/.screenrc
     cp -v .vimrc ${HOME}/.vimrc
     cp -v .minttyrc ${HOME}/.minttyrc
+
+    cp -Rv .vim ${HOME}/
     echo "Done"
 }
 
