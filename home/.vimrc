@@ -14,6 +14,7 @@ set background=dark
 set number
 set pastetoggle=<F3>
 set nowrap
+set hidden
 if has("multi_byte")
   set encoding=utf-8
   if &termencoding == ""
@@ -26,10 +27,11 @@ endif
 
 " netrw settings
 filetype plugin on
-let g:netrw_liststyle=3
+let g:netrw_liststyle=4
 let g:netrw_altv=1
 let g:netrw_banner=0
-" let g:netrw_winsize=25
+let g:netrw_winsize=25
+let g:netrw_chgwin=1
 let g:netrw_browse_split=2
 let g:netrw_preview=1
 
@@ -38,21 +40,22 @@ set ignorecase
 set smartcase
 
 colorscheme desert
-" alt+pgdn to switch to next tab
-map <Esc>[6;3~ :tabn <CR>
-" alt+pgup to switch to previous tab
-map <Esc>[5;3~ :tabp <CR> 
+" alt+pgdn to switch to next buffer
+map <Esc>[6;3~ :bn <CR>
+" alt+pgup to switch to previous buffer
+map <Esc>[5;3~ :bp <CR> 
 " alt+# to switch to tab number #
-map <Esc>1 :tabn 1 <CR>
-map <Esc>2 :tabn 2 <CR>
-map <Esc>3 :tabn 3 <CR>
-map <Esc>4 :tabn 4 <CR>
-map <Esc>5 :tabn 5 <CR>
-map <Esc>6 :tabn 6 <CR>
-map <Esc>7 :tabn 7 <CR>
-map <Esc>8 :tabn 8 <CR>
-map <Esc>9 :tabn 9 <CR>
-map <Esc>0 :tabn 10 <CR>
+map <Esc>1 :bfirst <CR>
+map <Esc>2 :b 2 <CR>
+map <Esc>3 :b 3 <CR>
+map <Esc>4 :b 4 <CR>
+map <Esc>5 :b 5 <CR>
+map <Esc>6 :b 6 <CR>
+map <Esc>7 :b 7 <CR>
+map <Esc>8 :b 8 <CR>
+map <Esc>9 :blast <CR>
+map <Esc>0 :b 10 <CR>
+map <Esc>w :bp<CR> :bd #<CR>
 
 set history=10000
 
