@@ -7,6 +7,7 @@ copyResources (){
     cp -v .screenrc ${HOME}/.screenrc
     cp -v .vimrc ${HOME}/.vimrc
     cp -v .minttyrc ${HOME}/.minttyrc
+    cp -v .tmux.conf ${HOME}/.tmux.conf
     echo "Done"
 }
 
