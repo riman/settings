@@ -8,6 +8,9 @@ copyResources (){
     cp -v .vimrc ${HOME}/.vimrc
     cp -v .minttyrc ${HOME}/.minttyrc
     cp -v .tmux.conf ${HOME}/.tmux.conf
+    cp -v .profile ${HOME}/.profile
+
+    cp -Rv .vim ${HOME}/
     echo "Done"
 }
 
