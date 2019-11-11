@@ -10,3 +10,6 @@ CursorType=block
 CursorBlinks=no
 Term=xterm
 BoldAsColour=no
+CtrlShiftShortcuts=no
+BackgroundColour=49,49,49
+ThemeFile=flat-ui
