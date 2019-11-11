@@ -11,5 +11,6 @@ git clone https://github.com/airblade/vim-gitgutter.git
 git clone https://github.com/vim-airline/vim-airline-themes
 git clone https://github.com/tpope/vim-sensible.git
 git clone https://github.com/tpope/vim-unimpaired.git
+git clone https://github.com/will133/vim-dirdiff.git
 popd
 popd
