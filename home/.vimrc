@@ -78,6 +78,8 @@ set runtimepath^=~/.vim/bundle/vim-fugitive
 let g:airline#extensions#tabline#enabled = 1
 
 " syntax
-autocmd BufNewFile,BufRead *.bat.cmd   set syntax=winbatch
+autocmd BufNewFile,BufRead *.bat.cmd set syntax=winbatch
+autocmd BufNewFile,BufRead *.plsql set filetype=sql
+autocmd BufNewFile,BufRead *.pl set filetype=sql
 syntax on
 execute pathogen#infect()
