@@ -28,12 +28,12 @@ endif
 " netrw settings
 filetype plugin on
 let g:netrw_liststyle=4
-let g:netrw_altv=1
-let g:netrw_banner=0
-let g:netrw_winsize=25
-let g:netrw_chgwin=1
-let g:netrw_browse_split=2
-let g:netrw_preview=1
+"let g:netrw_altv=1
+"let g:netrw_banner=0
+"let g:netrw_winsize=25
+"let g:netrw_chgwin=1
+"let g:netrw_browse_split=2
+"let g:netrw_preview=1
 
 " these two settings allow for smartcase search
 set ignorecase
