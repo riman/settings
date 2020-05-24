@@ -28,12 +28,12 @@ endif
 " netrw settings
 filetype plugin on
 let g:netrw_liststyle=4
-"let g:netrw_altv=1
-"let g:netrw_banner=0
-"let g:netrw_winsize=25
-"let g:netrw_chgwin=1
-"let g:netrw_browse_split=2
-"let g:netrw_preview=1
+let g:netrw_altv=1
+let g:netrw_banner=0
+let g:netrw_winsize=25
+let g:netrw_chgwin=1
+let g:netrw_browse_split=2
+let g:netrw_preview=1
 
 " these two settings allow for smartcase search
 set ignorecase
@@ -62,14 +62,6 @@ set history=10000
 " these settings are for matchit
 runtime macros/matchit.vim "use % to jump between XML tags
 
-" these settings are for ctrlp
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-set wildignore+=*.swp,*.d,*.o
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
-let g:ctrlp_working_path_mode = 'ra' " set working directory relative to .git
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " these settings are for vim-fugitive
 set runtimepath^=~/.vim/bundle/vim-fugitive
@@ -78,8 +70,6 @@ set runtimepath^=~/.vim/bundle/vim-fugitive
 let g:airline#extensions#tabline#enabled = 1
 
 " syntax
-autocmd BufNewFile,BufRead *.bat.cmd set syntax=winbatch
-autocmd BufNewFile,BufRead *.plsql set filetype=sql
-autocmd BufNewFile,BufRead *.pl set filetype=sql
+autocmd BufNewFile,BufRead *.bat.cmd   set syntax=winbatch
 syntax on
 execute pathogen#infect()
