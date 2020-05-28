@@ -74,5 +74,8 @@ let g:airline#extensions#tabline#enabled = 1
 
 " syntax
 autocmd BufNewFile,BufRead *.bat.cmd   set syntax=winbatch
+" overriding plsql syntax assigned to plsql extension as it is plplus in our
+" case
+autocmd BufRead,BufNewFile *.plsql set filetype=sql
 syntax on
 execute pathogen#infect()
