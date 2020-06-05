@@ -1,5 +1,12 @@
 #!/bin/sh
 PATH="/usr/local/bin:/usr/bin:/bin"
+function sourceIfFileExists() {
+    fileName=$1
+    if [ -f $fileName ] 
+    then
+        source $fileName
+    fi
+}
 
 [[ "$-" != *i* ]] && return
 
@@ -8,15 +15,13 @@ BASHRC_GLOBAL_FILE="/etc/bashrc"
 BASH_LOCAL_FILE="${BASH_DIR}/.bash_local"
 BASH_ALIASES="${BASH_DIR}/.bash_aliases"
 BASH_FUNCTIONS="${BASH_DIR}/.bash_functions"
+FZF=~/.fzf.bash
 
+sourceIfFileExists $BASH_LOCAL_FILE 
+sourceIfFileExists $BASH_ALIASES 
+sourceIfFileExists $BASH_FUNCTIONS 
+sourceIfFileExists $FZF 
 
-if [ -f $BASH_LOCAL_FILE ] 
-then 
-    source $BASH_LOCAL_FILE
-fi
-
-source $BASH_ALIASES
-source $BASH_FUNCTIONS
 
 if [ $(id -u) -eq 0 ];
 then
