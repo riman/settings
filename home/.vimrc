@@ -11,6 +11,7 @@ set pastetoggle=<F3>
 set nowrap
 set hidden
 set relativenumber
+set path+=**
 if has("multi_byte")
   set encoding=utf-8
   if &termencoding == ""
