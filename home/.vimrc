@@ -10,6 +10,7 @@ set number
 set pastetoggle=<F3>
 set nowrap
 set hidden
+set relativenumber
 if has("multi_byte")
   set encoding=utf-8
   if &termencoding == ""
