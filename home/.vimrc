@@ -12,6 +12,8 @@ set nowrap
 set hidden
 set relativenumber
 set path+=**
+set wildignore+=**/.git/**
+set wildignore+=**/target/**
 if has("multi_byte")
   set encoding=utf-8
   if &termencoding == ""
@@ -64,7 +66,7 @@ runtime macros/matchit.vim "use % to jump between XML tags
 set runtimepath^=~/.vim/bundle/vim-fugitive
 
 " fzf
-set runtimepath+=/usr/bin/fzf
+set rtp+=~/projects/fzf/
 
 " these settings are for vim-airline
 let g:airline#extensions#tabline#enabled = 1
