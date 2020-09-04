@@ -23,6 +23,8 @@ if has("multi_byte")
   "setglobal bomb
   set fileencodings=ucs-bom,utf-8,cp1251,cp866,latin1
 endif
+let mapleader=" "
+
 
 " netrw settings
 filetype plugin on
@@ -67,6 +69,7 @@ set runtimepath^=~/.vim/bundle/vim-fugitive
 
 " fzf
 set rtp+=~/projects/fzf/
+nnoremap <leader>p :FZF<cr>
 
 " these settings are for vim-airline
 let g:airline#extensions#tabline#enabled = 1
@@ -80,4 +83,13 @@ autocmd BufNewFile,BufRead *.bat.cmd   set syntax=winbatch
 " case
 autocmd BufRead,BufNewFile *.plsql set filetype=sql
 syntax on
+set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
+nmap Ж :
+" yank
+" nmap Н Y
+" nmap з p
+" nmap ф a
+" nmap щ o
+" nmap г u
+" nmap З P
 execute pathogen#infect()
