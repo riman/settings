@@ -4,6 +4,7 @@ copyResources (){
     echo "Copying resources"
     cp -Rv .bash ${HOME}/
     cp -v .bashrc ${HOME}/.bashrc
+    cp -v .zshrc ${HOME}/.zshrc
     cp -v .screenrc ${HOME}/.screenrc
     cp -v .vimrc ${HOME}/.vimrc
     cp -v .minttyrc ${HOME}/.minttyrc
