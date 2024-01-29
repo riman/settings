@@ -92,4 +92,3 @@ nmap Ж :
 " nmap щ o
 " nmap г u
 " nmap З P
-execute pathogen#infect()

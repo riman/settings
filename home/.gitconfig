@@ -1,0 +1,11 @@
+[core]
+    quotepath = false
+    editor = vim
+[color]
+    ui = auto
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    l = log --color --graph --pretty=format:'%Cgreen%cd%Creset %C(cyan)%cn%Creset %Cgreen%H%Creset%C(auto)%d%Creset%n%n%s%Creset%n%n%b%n%n' --name-status --date=format:'%Y-%m-%d %H:%M:%S' --all

@@ -10,6 +10,7 @@ copyResources (){
     cp -v .minttyrc ${HOME}/.minttyrc
     cp -v .tmux.conf ${HOME}/.tmux.conf
     cp -v .profile ${HOME}/.profile
+    cp -v .gitconfig ${HOME}/.gitconfig
 
     cp -Rv .vim ${HOME}/
     echo "Done"
